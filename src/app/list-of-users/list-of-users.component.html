@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12 d-flex flex-row flex-wrap justify-content-around">
+        <mat-card *ngFor="let data of userdata" class="m-3">
+        <p>Name :<button class="btn btn-link" (click)="editrow(data)">{{data.name}}</button> </p>
+        <p>Email: {{data.email}}</p>
+        <p>Phone: {{data.phone}}</p>
+        <p>Website: {{data.website}}</p>
+        </mat-card>
+    </div>
+</div>
+
